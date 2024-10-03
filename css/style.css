@@ -1,0 +1,266 @@
+/* Normalize */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+body a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin-top: 20px; /* espaço acima do h1 */
+    margin-bottom: 20px; /* espaço abaixo do h1 */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 20px; /* espaço acima do h1 */
+    margin-bottom: 20px; /* espaço abaixo do h1 */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+p, li, ul {
+    margin: 0; /* espaço entre os parágrafos */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+}
+/* Componentes, menus, botões */
+
+.menu-principal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    align-items: center;
+}
+.menu-principal li {
+    margin: 0 15px;
+}
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.menu-principal a:hover {
+    color: rgb(94, 146, 75);
+}
+.menu-posicao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* menu  acima de outros elementos */
+    background: rgb(251, 251, 251);
+    padding: 10px 0; /* espaçamento vertical */
+}
+.menu-principal .botao-doar a {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px; /* arredondando os cantos */
+    border: 2px solid black;
+    background-color: green;
+    font-weight: bold; /* espessura da fonte */
+}
+
+.menu-principal .botao-doar a:hover {
+    color: rgb(28, 225, 51); /* cor do hover */
+}
+
+
+/* Layout - containers, grids, flexbox, imagens*/
+
+.pessoas-e-alimentos {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: block; /* apagar o espaço extra abaixo da imagem */
+}
+
+.equipe {
+    height: auto;
+    width: 50%;
+    margin: 65px auto;
+    display: block;
+}
+
+.local {
+    height: auto;
+    width: 50%;
+    margin: 63px auto;
+    display: block;
+}
+
+.logo-site {
+    width: 40px;
+    height: auto;
+}
+
+
+/* Tipografia - fontes tam. de texto, cores e estilo */
+
+.texto-com-sobreposicao {
+    position: absolute;
+    top: 80%;
+    right: 30%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+.texto-sublinhado {
+    display: inline-block; /* garantindo que o border-bottom funcione */
+    border-bottom: 5px solid #4CAF50;
+    padding-bottom: 5px; /* espaço entre o texto e a barra */
+}
+
+.texto-sublinhado2 {
+    display: inline-block;
+    border-bottom: 5px solid #af4c4c;
+    padding-bottom: 5px;
+}
+
+.texto-sublinhado3 {
+    display: inline-block;
+    border-bottom: 5px solid #5b5555;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos gerais para o formulário */
+
+.form-contato {
+    display: flex;
+    flex-direction: column; /* deixa os campos um abaixo do outro */
+    max-width: 500px; /* tamanho máximo do formulário */
+    margin: 20px auto; /* centralizando horizontalmente */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os labels */
+
+.form-contato label {
+    margin-bottom: 5px; /* espaço entre o label e o campo de input */
+    font-weight: bold;
+    color: #333; /* cor do texto labels */
+}
+
+/* Estilos para os inputs e textarea */
+
+.form-contato input, 
+.form-contato textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* espaço entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%; /* preenche todo o espaço disponível */
+}
+
+/* Estilos para o botão */
+
+.botao-enviar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Efeito hover no botão */
+
+.botao-enviar:hover {
+    background-color: #45a049; /* muda a cor ao passar o mouse */
+}
+
+.form-contato h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center; /* centraliza o título */
+    color: #333;
+}
+
+.form-contato p {
+    margin-bottom: 20px;
+    text-align: center; /* centraliza o parágrafo */
+    color: #555;
+}
+
+
+
+/* Responsividade - media queries */
+
+@media (max-width: 768px), (max-width: 480px) {
+    .menu-principal {
+        flex-direction: row; /* faz com que os itens fiquem em linha */
+        justify-content: center; /* centraliza os itens no mobile */
+        padding: 0 10px; /* ajusta o padding para telas menores */
+    }
+
+    .menu-principal li {
+        margin: 0 10px; /* ajusta o espaço entre os itens do menu */
+        display: inline; /* faz com que os itens se comportem como inline */
+        white-space: nowrap; /* impede que o texto quebre em duas linhas */
+    }
+    .texto-com-sobreposicao {
+        font-size: 1.1rem;
+        top: 30%;
+    }
+    .pessoas-e-alimentos {
+        margin-top: 20%;
+    }
+    .menu-principal .botao-doar a {
+        padding: 10px 15px; /* aumenta o espaçamento do botão */
+        font-size: 1rem;
+        border-radius: 5px;
+        display: inline-block; /* faz com que o botão não se distorça */
+    }
+}
+
